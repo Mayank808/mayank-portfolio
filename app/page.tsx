@@ -1,8 +1,24 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+'use client';
 
-const inter = Inter({ subsets: ["latin"] });
+import Typewriter from 'typewriter-effect';
+import SocialBar from './components/socialsbar/SocialBar';
 
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <div>
+        Hi, My Name Is
+        <br />
+        Mayank
+      </div>
+      <Typewriter
+        options={{
+          strings: ['Hello', 'Hello World'],
+          autoStart: true,
+          loop: true,
+        }}
+      />
+      <SocialBar />
+    </div>
+  );
 }
