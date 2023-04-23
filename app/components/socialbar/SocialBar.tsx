@@ -67,7 +67,7 @@ const buttons: IconButtonProps[] = [
 
 const SocialBar = () => {
   return (
-    <div className='flex flex-row gap-1 overflow-x-auto sm:gap-2 sm:overflow-auto'>
+    <div className='flex flex-row gap-1 overflow-x-auto scroll-smooth hover:scroll-auto sm:gap-2 sm:overflow-auto'>
       {buttons.map((button, index) => (
         <IconButton
           key={button.key}

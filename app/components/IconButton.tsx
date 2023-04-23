@@ -26,12 +26,10 @@ const IconButton: React.FC<IconButtonProps> = ({
       type='button'
       disabled={disabled}
       onClick={onClick}
-      data-te-ripple-init
-      data-te-ripple-color='light'
-      className={`aspect-w-1 aspect-h-1 m-1 mb-2 inline-block rounded-full p-3 text-xs font-medium 
-                  uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out 
-                  hover:opacity-80 hover:shadow-lg hover:translate-y-2 focus:shadow-lg focus:outline-none focus:ring-0
-                  active:shadow-lg disabled:cursor-not-allowed disabled:opacity-70
+      className={`aspect-w-1 aspect-h-1 m-1 mb-2 inline-block rounded-full p-3 text-xs 
+                  font-medium uppercase leading-normal text-white shadow-md transition duration-200 
+                  ease-in-out hover:translate-y-2 hover:opacity-80 hover:shadow-lg focus:shadow-lg focus:outline-none
+                  focus:ring-0 active:shadow-lg disabled:cursor-not-allowed disabled:opacity-70
               ${outline ? 'bg-white' : 'bg-rose-500'}
               ${outline ? 'border-black' : 'bg-rose-500'}
               ${outline ? 'text-black' : 'text-white'}
