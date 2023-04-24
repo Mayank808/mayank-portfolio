@@ -4,7 +4,7 @@ import CustomTypeWriter from './typewriter/TypeWriter';
 const IntroGroup = () => {
   return (
     <div>
-      <div className='z-4'>
+      <div className='absolute right-0 z-10 h-screen w-1/2 max-sm:bottom-0 max-sm:h-1/2 max-sm:w-full'>
         <div>
           <div>
             Hi, My Name Is
