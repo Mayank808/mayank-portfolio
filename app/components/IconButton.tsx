@@ -23,6 +23,8 @@ const IconButton: React.FC<IconButtonProps> = ({
 }) => {
   return (
     <button
+      data-te-ripple-init
+      data-te-ripple-color='light'
       type='button'
       disabled={disabled}
       onClick={onClick}
