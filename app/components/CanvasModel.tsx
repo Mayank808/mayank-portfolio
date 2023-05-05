@@ -1,5 +1,5 @@
 const CanvasModel = () => {
-  return <div className='w-full h-screen max-lg:h-2/3 bg-red-400 z-[-1]'></div>;
+  return <div className='z-[-1] h-screen w-full bg-red-400 max-lg:h-2/3'></div>;
 };
 
 export default CanvasModel;
