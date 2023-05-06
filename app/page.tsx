@@ -3,13 +3,22 @@
 import IntroGroup from './components/IntroGroup';
 import CanvasModel from './components/CanvasModel';
 import SocialBar from './components/socialbar/SocialBar';
+import dynamic from 'next/dynamic';
+import RoomObjectLoader from './components/RoomObjectLoader';
+
+const LazyVoxelRoomObject = dynamic(() => import('./components/voxel-room'), {
+  ssr: false,
+  loading: () => <RoomObjectLoader />,
+});
 
 export default function Home() {
   return (
     <div>
       <div className='mx-auto w-full overflow-hidden bg-green-100 lg:flex lg:flex-wrap'>
-        <div className='z-[1] h-[70vh] w-full bg-red-100 lg:h-screen'>test</div>
-        <div className='absolute z-[10] flex w-full flex-col items-center justify-center bg-blue-300 lg:absolute lg:right-0 lg:h-full lg:w-1/2'>
+        <div className='z-[1] h-[70vh] w-full bg-red-100 lg:h-screen'>
+          <LazyVoxelRoomObject />
+        </div>
+        <div className='absolute z-[10] flex w-full flex-col items-center justify-center lg:absolute lg:right-0 lg:h-full lg:w-1/2'>
           <div className='flex w-full max-w-3xl flex-col gap-5 p-10 text-gray-900 dark:text-white'>
             <h1 className='text-6xl font-bold'>Title</h1>
             <p className='m-5 overflow-hidden text-sm max-sm:text-xs'>

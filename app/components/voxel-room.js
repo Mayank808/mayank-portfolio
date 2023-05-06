@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { loadGLTFModel } from '../lib/model';
+import { loadGLTFModel } from './gltfModel';
 import {
   RoomModelContainer,
   RoomModelLoadingSpinner,
@@ -15,7 +15,7 @@ const VoxelRoom = () => {
   const refContainer = useRef();
   const [loading, setLoading] = useState(true);
   const refRenderer = useRef();
-  const urlDogGLB = '/model-path.glb';
+  const urlRoomGLB = '/extrasave.glb';
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer;
@@ -74,7 +74,7 @@ const VoxelRoom = () => {
       controls.autoRotate = true;
       controls.target = target;
 
-      loadGLTFModel(scene, urlDogGLB, {
+      loadGLTFModel(scene, urlRoomGLB, {
         receiveShadow: false,
         castShadow: false,
       }).then(() => {
