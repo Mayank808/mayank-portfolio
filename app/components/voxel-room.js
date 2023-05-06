@@ -41,7 +41,7 @@ const VoxelRoom = () => {
       });
       renderer.setPixelRatio(window.devicePixelRatio);
       renderer.setSize(scW, scH);
-      renderer.outputEncoding = THREE.sRGBEncoding;
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
       container.appendChild(renderer.domElement);
       refRenderer.current = renderer;
       const scene = new THREE.Scene();
@@ -55,15 +55,16 @@ const VoxelRoom = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.005 + 4.8;
-      const camera = new THREE.OrthographicCamera(
-        -scale,
-        scale,
-        scale,
-        -scale,
-        0.01,
-        50000
-      );
+      const scale = scH * 0.4 + 4.8;
+      const camera = new THREE.PerspectiveCamera(45, scW / scH, 1, 1000);
+      // const camera = new THREE.OrthographicCamera(
+      //   -scale,
+      //   scale,
+      //   scale,
+      //   -scale,
+      //   0.01,
+      //   50000
+      // );
       camera.position.copy(initialCameraPosition);
       camera.lookAt(target);
 
