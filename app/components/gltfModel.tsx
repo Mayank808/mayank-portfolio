@@ -10,25 +10,6 @@ export function loadGLTFModel(
 ) {
   const { receiveShadow, castShadow } = options;
 
-  const handleWindowResize = useCallback(() => {
-    const { current: renderer } = refRenderer;
-    const { current: container } = refContainer;
-    if (container && renderer) {
-      const scW = container.clientWidth;
-      const scH = container.clientHeight;
-
-      renderer.setSize(scW, scH);
-    }
-  }, []);
-
-    
-  useEffect(() => {
-    window.addEventListener('resize', handleWindowResize, false);
-    return () => {
-      window.removeEventListener('resize', handleWindowResize, false);
-    };
-  }, [handleWindowResize]);
-
   return new Promise((resolve, reject) => {
     const loader = new GLTFLoader();
 
