@@ -46,25 +46,13 @@ const VoxelRoom = () => {
       refRenderer.current = renderer;
       const scene = new THREE.Scene();
 
-      const target = new THREE.Vector3(-0.5, 1.2, 0);
+      const target = new THREE.Vector3(-1, 2, 0);
       const initialCameraPosition = new THREE.Vector3(
-        20 * Math.sin(0.2 * Math.PI),
-        10,
-        20 * Math.cos(0.2 * Math.PI)
+        200 * Math.sin(0.2 * Math.PI),
+        150,
+        300 * Math.cos(0.2 * Math.PI) + 100
       );
-
-      // 640 -> 240
-      // 8   -> 6
-      const scale = scH * 0.4 + 4.8;
-      const camera = new THREE.PerspectiveCamera(45, scW / scH, 1, 1000);
-      // const camera = new THREE.OrthographicCamera(
-      //   -scale,
-      //   scale,
-      //   scale,
-      //   -scale,
-      //   0.01,
-      //   50000
-      // );
+      const camera = new THREE.PerspectiveCamera(75, scW / scH, 0.1, 3000);
       camera.position.copy(initialCameraPosition);
       camera.lookAt(target);
 
@@ -94,7 +82,7 @@ const VoxelRoom = () => {
           const p = initialCameraPosition;
           const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20;
 
-          camera.position.y = 10;
+          camera.position.y = 150;
           camera.position.x =
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed);
           camera.position.z =

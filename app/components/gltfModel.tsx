@@ -1,4 +1,5 @@
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { useEffect, useRef, useCallback } from 'react';
 
 export function loadGLTFModel(
   // @ts-ignore
@@ -8,6 +9,26 @@ export function loadGLTFModel(
   options = { receiveShadow: true, castShadow: true }
 ) {
   const { receiveShadow, castShadow } = options;
+
+  const handleWindowResize = useCallback(() => {
+    const { current: renderer } = refRenderer;
+    const { current: container } = refContainer;
+    if (container && renderer) {
+      const scW = container.clientWidth;
+      const scH = container.clientHeight;
+
+      renderer.setSize(scW, scH);
+    }
+  }, []);
+
+    
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowResize, false);
+    return () => {
+      window.removeEventListener('resize', handleWindowResize, false);
+    };
+  }, [handleWindowResize]);
+
   return new Promise((resolve, reject) => {
     const loader = new GLTFLoader();
 
