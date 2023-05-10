@@ -15,7 +15,7 @@ const VoxelRoom = () => {
   const refContainer = useRef();
   const [loading, setLoading] = useState(true);
   const refRenderer = useRef();
-  const urlRoomGLB = '/extrasave.glb';
+  const urlRoomGLB = '/mayankvoxelroommodelA.glb';
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer;

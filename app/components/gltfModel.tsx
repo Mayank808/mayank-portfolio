@@ -1,5 +1,4 @@
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { useEffect, useRef, useCallback } from 'react';
 
 export function loadGLTFModel(
   // @ts-ignore

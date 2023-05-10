@@ -3,11 +3,12 @@ import { Box, Spinner } from '@chakra-ui/react';
 
 export const RoomModelLoadingSpinner = () => (
   <Spinner
-    size='xl'
     className='
-        absolute
-        left-1/2
+    absolute
+    left-1/2
         top-1/2
+        h-[4vh]
+        w-[4vh]
         -translate-x-1/2 -translate-y-1/2 transform
         border-blue-500
         text-blue-500
@@ -16,11 +17,7 @@ export const RoomModelLoadingSpinner = () => (
 );
 
 export const RoomModelContainer = forwardRef(({ children }, ref) => (
-  <Box
-    ref={ref}
-    className='voxel-room h-full w-full m-auto relative'
-    m='auto'
-  >
+  <Box ref={ref} className='voxel-room relative m-auto h-full w-full' m='auto'>
     {children}
   </Box>
 ));
