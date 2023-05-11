@@ -9,7 +9,6 @@ export const RoomModelLoadingSpinner = () => (
         top-1/2
         h-[4vh]
         w-[4vh]
-        -translate-x-1/2 -translate-y-1/2 transform
         border-blue-500
         text-blue-500
       '

@@ -16,6 +16,7 @@ import { RiSpotifyFill } from 'react-icons/ri';
 const buttons: IconButtonProps[] = [
   {
     key: 'Github',
+    title: 'My Github',
     icon: AiFillGithub,
     onClick: () => {
       window.open('https://github.com/mayank808');
@@ -23,6 +24,7 @@ const buttons: IconButtonProps[] = [
   },
   {
     key: 'Email',
+    title: 'Email Me',
     icon: AiOutlineMail,
     onClick: () => {
       window.open('mailto:m4mehra@uwaterloo.ca');
@@ -30,6 +32,7 @@ const buttons: IconButtonProps[] = [
   },
   {
     key: 'Linkedin',
+    title: 'Connect on Linkedin',
     icon: AiFillLinkedin,
     onClick: () => {
       window.open('https://www.linkedin.com/in/mayank808/');
@@ -37,6 +40,7 @@ const buttons: IconButtonProps[] = [
   },
   {
     key: 'Calendly',
+    title: 'Schedule a Chat',
     icon: BiCoffeeTogo,
     onClick: () => {
       window.open('https://calendly.com/mayank808/schedule');
@@ -44,6 +48,7 @@ const buttons: IconButtonProps[] = [
   },
   {
     key: 'Resume',
+    title: 'My Resume',
     icon: MdOutlineContactPage,
     onClick: () => {
       window.open(
@@ -53,6 +58,7 @@ const buttons: IconButtonProps[] = [
   },
   {
     key: 'Instagram',
+    title: 'My Instagram',
     icon: AiOutlineInstagram,
     onClick: () => {
       window.open('https://www.instagram.com/mayank.808/');
@@ -67,10 +73,11 @@ const buttons: IconButtonProps[] = [
 
 const SocialBar = () => {
   return (
-    <div className='flex flex-row gap-1 overflow-x-auto scroll-smooth hover:scroll-auto sm:gap-2 sm:overflow-auto'>
+    <div className='flex flex-row flex-wrap justify-center gap-1 pb-5 max-sm:ml-10 max-sm:mr-10'>
       {buttons.map((button, index) => (
         <IconButton
           key={button.key}
+          title={button.title}
           icon={button.icon}
           onClick={button.onClick}
         />

@@ -15,7 +15,7 @@ const VoxelRoom = () => {
   const refContainer = useRef();
   const [loading, setLoading] = useState(true);
   const refRenderer = useRef();
-  const urlRoomGLB = '/mayankvoxelroommodelA.glb';
+  const urlRoomGLB = '/mayankvoxelroommodelB.glb';
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer;
@@ -46,11 +46,12 @@ const VoxelRoom = () => {
       refRenderer.current = renderer;
       const scene = new THREE.Scene();
 
-      const target = new THREE.Vector3(-1, 2, 0);
+      const x_pos = scW >= 1024 ? 150 : -1;
+      const target = new THREE.Vector3(x_pos, 2, 0);
       const initialCameraPosition = new THREE.Vector3(
-        200 * Math.sin(0.2 * Math.PI),
+        150 * Math.sin(0.2 * Math.PI),
         150,
-        300 * Math.cos(0.2 * Math.PI) + 100
+        180 * Math.cos(0.2 * Math.PI) + 100
       );
       const camera = new THREE.PerspectiveCamera(75, scW / scH, 0.1, 3000);
       camera.position.copy(initialCameraPosition);
@@ -77,6 +78,10 @@ const VoxelRoom = () => {
         req = requestAnimationFrame(animate);
 
         frame = frame <= 100 ? frame + 1 : frame;
+
+        const x_pos = scW >= 1024 ? 150 : -1;
+        const target = new THREE.Vector3(x_pos, 2, 0);
+        camera.lookAt(target);
 
         if (frame <= 100) {
           const p = initialCameraPosition;
