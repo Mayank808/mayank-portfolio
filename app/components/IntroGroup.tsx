@@ -11,7 +11,7 @@ const IntroGroup = () => {
 
         <div className='pb-5 pl-10 pr-10'>
           <h1 className='text-5xl font-bold'>
-            Hi <WavingHand /> <br /> I'm Mayank
+            Hi <WavingHand /> <br /> I&apos;m Mayank
           </h1>
           <CustomTypeWriter />
           <p className='overflow-hidden text-center text-sm font-bold max-sm:text-sm'>
@@ -31,17 +31,17 @@ const IntroGroup = () => {
             >
               UGO @ TD Bank Groups
             </a>
-            , I've had the chance to grow my skills as a Software Engineer and
-            Full Stack & Mobile Developer.
+            , I&apos;ve had the chance to grow my skills as a Software Engineer
+            and Full Stack & Mobile Developer.
             <br /> <br />
-            When I'm not coding, I'm all about exploring new things while
-            enjoying my hobbies. Whether it's spiking volleyballs, cooking in
-            the kitchen, hitting the gym, discovering new restaurants, or
-            traveling.
+            When I&apos;m not coding, I&apos;m all about exploring new things
+            while enjoying my hobbies. Whether it&apos;s spiking volleyballs,
+            cooking in the kitchen, hitting the gym, discovering new
+            restaurants, or traveling.
             <br /> <br />
             Sorry that I am currently out of the office, probably touching
             grass. Feel free to reach out to me using the links provided or
-            check out my resume. I'm thrilled to connect with like-minded
+            check out my resume. I&apos;m thrilled to connect with like-minded
             individuals and explore new opportunities to learn and grow.
           </p>
         </div>
