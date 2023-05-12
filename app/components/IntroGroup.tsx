@@ -9,7 +9,7 @@ const IntroGroup = () => {
       <div className='flex w-full max-w-3xl flex-col gap-5 text-white max-sm:p-5'>
         <Headshot src='/Headshot.jpg' alt="Mayank's Headshot" />
 
-        <div className='pb-5 pl-10 pr-10'>
+        <div className='md:pb-5 md:pl-10 md:pr-10 pl-4 pr-4 pb-4'>
           <h1 className='text-5xl font-bold'>
             Hi <WavingHand /> <br /> I&apos;m Mayank
           </h1>
@@ -40,7 +40,7 @@ const IntroGroup = () => {
             restaurants, or traveling.
             <br /> <br />
             Sorry that I am currently out of the office, probably touching
-            grass. Feel free to reach out to me using the links provided or
+            grass. Feel free to reach out to me using the links provided below or
             check out my resume. I&apos;m thrilled to connect with like-minded
             individuals and explore new opportunities to learn and grow.
           </p>

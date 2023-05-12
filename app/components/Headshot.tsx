@@ -7,7 +7,7 @@ interface HeadshotProps {
 
 const Headshot: React.FC<HeadshotProps> = ({ src, alt }) => {
   return (
-    <div className='flex w-full flex-col items-center justify-center'>
+    <div className='flex w-full flex-col items-center justify-center p-2'>
       <Image
         className='rounded-full border-2 border-white'
         height={150}

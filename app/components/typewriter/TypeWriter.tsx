@@ -7,16 +7,15 @@ const CustomTypeWriter = () => {
     'A Learner',
     'Software Developer',
     '6 Foot for No Reason',
-    'Adventure Seeker',
     'Algo Whisperer',
-    'Flowing with the flow',
+    'Flowing With The Flow',
     'Laughing at Syntax Errors',
     'Casual Stack Overflow User',
     'Great at Googling',
     '404: Humor Not Found',
     'Meme Generator, Code Innovator',
     'Silver Elite in CSGO',
-    'Night Owl',
+    'A Night Owl',
   ];
 
   // Randomize the array

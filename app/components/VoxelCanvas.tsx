@@ -8,7 +8,7 @@ const LazyVoxelRoomObject = dynamic(() => import('./voxel-room'), {
 
 const VoxelCanvas = () => {
   return (
-    <div className='z-[1] h-[70vh] w-full lg:h-screen'>
+    <div className='z-[1] h-[70vh] w-full lg:h-screen min-h-[375px]'>
       <LazyVoxelRoomObject />
     </div>
   );
