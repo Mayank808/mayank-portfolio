@@ -21,39 +21,47 @@ const VoxelRoom = () => {
     const { current: renderer } = refRenderer;
     const { current: container } = refContainer;
     if (container && renderer) {
-      const scW = container.clientWidth;
-      const scH = container.clientHeight;
+      const currScreenWidth = container.clientWidth;
+      const currScreenHeight = container.clientHeight;
 
-      renderer.setSize(scW, scH);
+      renderer.setSize(currScreenWidth, currScreenHeight);
     }
   }, []);
 
-  /* eslint-disable react-hooks/exhaustive-deps */
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowResize, false);
+    return () => {
+      window.removeEventListener('resize', handleWindowResize, false);
+    };
+  }, [handleWindowResize]);
+
   useEffect(() => {
     const { current: container } = refContainer;
     if (container) {
-      const scW = container.clientWidth;
-      const scH = container.clientHeight;
+      const currScreenWidth = container.clientWidth;
+      const currScreenHeight = container.clientHeight;
 
       const renderer = new THREE.WebGLRenderer({
         antialias: true,
         alpha: true,
       });
+
       renderer.setPixelRatio(window.devicePixelRatio);
-      renderer.setSize(scW, scH);
+      renderer.setSize(currScreenWidth, currScreenHeight);
       renderer.outputColorSpace = THREE.SRGBColorSpace;
       container.appendChild(renderer.domElement);
       refRenderer.current = renderer;
       const scene = new THREE.Scene();
 
-      const x_pos = scW >= 1024 ? 150 : -1;
+      const x_pos = currScreenWidth >= 1024 ? 150 : -1;
       const target = new THREE.Vector3(x_pos, 2, 0);
       const initialCameraPosition = new THREE.Vector3(
         150 * Math.sin(0.2 * Math.PI),
         150,
         180 * Math.cos(0.2 * Math.PI) + 100
       );
-      const camera = new THREE.PerspectiveCamera(75, scW / scH, 0.1, 3000);
+
+      const camera = new THREE.PerspectiveCamera(75, currScreenWidth / currScreenHeight, 0.1, 3000);
       camera.position.copy(initialCameraPosition);
       camera.lookAt(target);
 
@@ -79,7 +87,7 @@ const VoxelRoom = () => {
 
         frame = frame <= 100 ? frame + 1 : frame;
 
-        const x_pos = scW >= 1024 ? 150 : -1;
+        const x_pos = currScreenWidth >= 1024 ? 150 : -1;
         const target = new THREE.Vector3(x_pos, 2, 0);
         camera.lookAt(target);
 
@@ -92,7 +100,6 @@ const VoxelRoom = () => {
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed);
           camera.position.z =
             p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed);
-          camera.lookAt(target);
         } else {
           controls.update();
         }
@@ -107,13 +114,6 @@ const VoxelRoom = () => {
       };
     }
   }, []);
-
-  useEffect(() => {
-    window.addEventListener('resize', handleWindowResize, false);
-    return () => {
-      window.removeEventListener('resize', handleWindowResize, false);
-    };
-  }, [handleWindowResize]);
 
   return (
     <RoomModelContainer ref={refContainer}>
