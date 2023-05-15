@@ -52,7 +52,7 @@ const buttons: IconButtonProps[] = [
     icon: MdOutlineContactPage,
     onClick: () => {
       window.open(
-        'https://docs.google.com/document/d/1OIYjtuhDJq2oTQcp2yXJn1xIxXrIjxRP5OjzCncjIfY/edit?usp=sharing'
+        'https://drive.google.com/file/d/19oGosvHAxLBXjnECroDuUXDSGZ9DYVJm/view?usp=sharing'
       );
     },
   },

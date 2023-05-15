@@ -9,7 +9,7 @@ const IntroGroup = () => {
       <div className='flex w-full max-w-3xl flex-col gap-5 text-white max-sm:p-5'>
         <Headshot src='/Headshot.jpg' alt="Mayank's Headshot" />
 
-        <div className='md:pb-5 md:pl-10 md:pr-10 pl-4 pr-4 pb-4'>
+        <div className='pb-4 pl-4 pr-4 md:pb-5 md:pl-10 md:pr-10'>
           <h1 className='text-5xl font-bold'>
             Hi <WavingHand /> <br /> I&apos;m Mayank
           </h1>
@@ -31,8 +31,8 @@ const IntroGroup = () => {
             >
               UGO @ TD Bank Groups
             </a>
-            , I&apos;ve had the chance to grow my skills as a Software Engineer
-            and Full Stack & Mobile Developer.
+            , I&apos;ve had the chance to grow my skills as a Software Engineer,
+            Full Stack, and Mobile Developer.
             <br /> <br />
             When I&apos;m not coding, I&apos;m all about exploring new things
             while enjoying my hobbies. Whether it&apos;s spiking volleyballs,
@@ -40,9 +40,10 @@ const IntroGroup = () => {
             restaurants, or traveling.
             <br /> <br />
             Sorry that I am currently out of the office, probably touching
-            grass. Feel free to reach out to me using the links provided below or
-            check out my resume. I&apos;m thrilled to connect with like-minded
-            individuals and explore new opportunities to learn and grow.
+            grass. Feel free to reach out to me using the links provided below
+            or check out my resume. I&apos;m thrilled to connect with
+            like-minded individuals and explore new opportunities to learn and
+            grow.
           </p>
         </div>
       </div>
