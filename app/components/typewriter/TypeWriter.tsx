@@ -13,7 +13,6 @@ const CustomTypeWriter = () => {
     'Casual Stack Overflow User',
     'Great at Googling',
     '404: Humor Not Found',
-    'Meme Generator, Code Innovator',
     'Silver Elite in CSGO',
     'A Night Owl',
   ];
