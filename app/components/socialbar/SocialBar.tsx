@@ -12,6 +12,7 @@ import { BiCoffeeTogo } from 'react-icons/bi';
 import { MdOutlineContactPage } from 'react-icons/md';
 import { SlSocialSpotify } from 'react-icons/sl';
 import { RiSpotifyFill } from 'react-icons/ri';
+import { redirect } from 'next/navigation'
 
 const buttons: IconButtonProps[] = [
   {
@@ -27,7 +28,7 @@ const buttons: IconButtonProps[] = [
     title: 'Email Me',
     icon: AiOutlineMail,
     onClick: () => {
-      window.open('mailto:m4mehra@uwaterloo.ca');
+      window.open('mailto:m4mehra@uwaterloo.ca?subject=Hey%20lets%20connect!&body=Looking%20forward%20to%20getting%20your%20message!');
     },
   },
   {
@@ -51,9 +52,7 @@ const buttons: IconButtonProps[] = [
     title: 'My Resume',
     icon: MdOutlineContactPage,
     onClick: () => {
-      window.open(
-        'https://drive.google.com/file/d/19oGosvHAxLBXjnECroDuUXDSGZ9DYVJm/view?usp=sharing'
-      );
+      window.open('/resume')
     },
   },
   {
