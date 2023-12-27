@@ -34,13 +34,13 @@ const IntroGroup = () => {
             <br /> <br />I have previously made an impact at{' '}
             {jobLinks.map((link, index) => (
               <span key={link.company}>
-                <a href={link.link} className='text-red-500 underline'>
+                <a href={link.link} className='text-rose-500 underline'>
                   {link.company}
                 </a>
                 {index !== jobLinks.length - 1 ? ', ' : '. '}
               </span>
             ))}
-            Where i&apos;ve played pivotal roles working on diverse projects,
+            Where i&apos;ve played a pivotal role working on diverse projects,
             wearing various hats and contributing significantly to each
             team&apos;s success. My experience extends beyond typical roles,
             allowing me to bring adaptability and a keen passion for learning to
@@ -50,9 +50,10 @@ const IntroGroup = () => {
             When I&apos;m not coding, I&apos;m all about exploring new things
             while enjoying my hobbies. Whether it&apos;s spiking volleyballs,
             cooking in the kitchen, hitting the gym, discovering new
-            restaurants, or traveling. Feel free to reach out to me using the links provided below or check
-            out my resume. I&apos;m thrilled to connect with like-minded
-            individuals and explore new opportunities to learn and grow.
+            restaurants, or traveling. Feel free to reach out to me using the
+            links provided below or check out my resume. I&apos;m thrilled to
+            connect with like-minded individuals and explore new opportunities
+            to learn and grow.
           </p>
         </div>
       </div>
