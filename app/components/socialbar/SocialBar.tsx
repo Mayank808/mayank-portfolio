@@ -7,12 +7,8 @@ import {
   AiFillLinkedin,
   AiOutlineInstagram,
 } from 'react-icons/ai';
-import { GiCoffeeCup } from 'react-icons/gi';
 import { BiCoffeeTogo } from 'react-icons/bi';
 import { MdOutlineContactPage } from 'react-icons/md';
-import { SlSocialSpotify } from 'react-icons/sl';
-import { RiSpotifyFill } from 'react-icons/ri';
-import { redirect } from 'next/navigation'
 
 const buttons: IconButtonProps[] = [
   {
