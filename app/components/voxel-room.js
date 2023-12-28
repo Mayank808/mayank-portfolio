@@ -15,7 +15,7 @@ const VoxelRoom = () => {
   const refContainer = useRef();
   const [loading, setLoading] = useState(true);
   const refRenderer = useRef();
-  const routeToModel = '/roomV2.glb';
+  const urlRoomGLB = '/mayankvoxelroommodelB.glb';
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer;
     const { current: container } = refContainer;
@@ -72,7 +72,7 @@ const VoxelRoom = () => {
       controls.autoRotate = true;
       controls.target = target;
 
-      loadGLTFModel(scene, routeToModel, {
+      loadGLTFModel(scene, urlRoomGLB, {
         receiveShadow: false,
         castShadow: false,
       }).then(() => {
