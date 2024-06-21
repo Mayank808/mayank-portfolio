@@ -59,7 +59,9 @@ const IntroGroup = () => {
             <Image src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Credit%20Card.png" alt="Credit Card" width={width} height={height} /></li>
           </ul>
 
-          <p className='overflow-hidden text-left text-sm font-bold max-sm:text-sm img:inline'>Please feel free to connect and reach out to me! <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="Handshake" width={width} height={height} /><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Milky%20Way.png" alt="Milky Way" width={width} height={height} /></p>
+          <p className='overflow-hidden text-left text-sm font-bold max-sm:text-sm img:inline'>Please feel free to connect and reach out to me! 
+          <Image src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="Handshake" width={width} height={height} />
+          <Image src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Milky%20Way.png" alt="Milky Way" width={width} height={height} /></p>
         </div>
       </div>
       <SocialBar />
