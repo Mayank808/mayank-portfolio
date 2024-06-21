@@ -35,8 +35,8 @@ const IconButton: React.FC<IconButtonProps> = ({
                   text-xs font-medium uppercase leading-normal text-white shadow-md transition 
                   duration-200 ease-in-out hover:translate-y-2 hover:opacity-80 hover:shadow-lg focus:shadow-lg
                   focus:outline-none focus:ring-0 active:shadow-lg disabled:cursor-not-allowed disabled:opacity-70
-              ${outline ? 'bg-white' : 'bg-rose-500'}
-              ${outline ? 'border-black' : 'bg-rose-500'}
+              ${outline ? 'bg-white' : 'bg-darkBlue'}
+              ${outline ? 'border-black' : 'bg-darkBlue'}
               ${outline ? 'text-black' : 'text-white'}
               ${small ? 'py-1' : 'py-3'}
               ${small ? 'text-sm' : 'text-md'}

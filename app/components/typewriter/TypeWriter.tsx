@@ -5,16 +5,19 @@ import Typewriter from 'typewriter-effect';
 const CustomTypeWriter = () => {
   const stringsArray = [
     'A Learner',
-    'Software Developer',
+    'A Software Developer',
     '6 Foot for No Reason',
     'Algo Whisperer',
     'Flowing With The Flow',
     'Laughing at Syntax Errors',
     'Casual Stack Overflow User',
+    'Farming Likes in the Team Slack',
     'Great at Googling',
     '404: Humor Not Found',
     'Silver Elite in CSGO',
     'A Night Owl',
+    'Debugging Something',
+    'Currently Touching Grass',
   ];
 
   // Randomize the array
