@@ -9,8 +9,8 @@ const height = 30
 
 const IntroGroup = () => {
   return (
-    <div className='sm:pt-10 absolute z-[10] flex w-full flex-col items-center justify-center lg:absolute lg:right-0 lg:h-full lg:w-1/2'>
-      <div className='flex w-full max-w-3xl flex-col gap-5 text-white max-sm:p-5 color-url'>
+    <div className='max-sm:pt-10 absolute z-[10] flex w-full flex-col items-center justify-center lg:absolute lg:right-0 lg:h-full lg:w-1/2'>
+      <div className='flex w-full max-w-3xl flex-col gap-5 text-white color-url'>
         <Headshot src='/Headshot.jpg' alt="Mayank's Headshot" />
 
         <div className='pb-4 pl-4 pr-4 md:pb-5 md:pl-10 md:pr-10 inline-images'>
@@ -38,7 +38,7 @@ const IntroGroup = () => {
             <br />
           </p>
 
-          <p className='overflow-hidden text-left text-sm font-bold max-sm:text-sm'> Previously built projects as a:</p>
+          <p className='overflow-hidden text-left text-sm font-bold max-sm:text-sm pt-2'> Previously built projects as a:</p>
           <ul className='list-disc list-inside overflow-hidden text-left text-sm font-bold max-sm:text-sm pl-2'>
             <li>Software Engineer @ <a href="https://www.faire.com" target="blank">Faire</a>: May 2024 - Present 
             <Image src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Convenience%20Store.png" alt="Convenience Store" width={width} height={height} /> 
