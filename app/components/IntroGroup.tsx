@@ -18,7 +18,7 @@ const IntroGroup = () => {
           </h1>
           <CustomTypeWriter />
           <p className='overflow-hidden text-center text-sm font-bold max-sm:text-sm img:inline'>
-            I'm a 3B Computer Science student 
+            I&apos;m a 3B Computer Science student 
             <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Technologist.png" alt="Technologist" width={width} height={height} /> 
             at the University of Waterloo, with almost 2 years of work experience in software engineering roles. 
             <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width={width} height={height} /> 
