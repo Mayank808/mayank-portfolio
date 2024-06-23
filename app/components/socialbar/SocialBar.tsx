@@ -68,7 +68,7 @@ const buttons: IconButtonProps[] = [
 
 const SocialBar = () => {
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-1 pb-5 max-sm:ml-10 max-sm:mr-10'>
+    <div className='flex flex-row flex-wrap justify-center gap-1 pb-5 max-sm:ml-10 max-sm:mr-10 min-h-0'>
       {buttons.map((button, index) => (
         <IconButton
           key={button.key}
