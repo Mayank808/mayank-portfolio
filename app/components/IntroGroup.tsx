@@ -9,7 +9,7 @@ const height = 30;
 
 const IntroGroup = () => {
   return (
-    <div className='absolute z-[10] flex flex-col w-full max-lg:pt-10 max-lg:pb-4 max-lg:px-4 lg:right-0 lg:h-screen lg:w-1/2 lg:overflow-y-auto lg:pt-5 min-h-0'>
+    <div className='absolute z-[10] flex flex-col w-full max-lg:pt-10 max-lg:pb-4 max-lg:px-2 lg:right-0 lg:h-screen lg:w-1/2 lg:overflow-y-auto lg:pt-5 min-h-0'>
       <div className='w-full h-full flex justify-center align-middle flex-col color-url text-white'>
         <div className='min-h-0'>
 
