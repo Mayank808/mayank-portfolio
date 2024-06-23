@@ -15,7 +15,7 @@ const VoxelRoom = () => {
   const refContainer = useRef();
   const [loading, setLoading] = useState(true);
   const refRenderer = useRef();
-  const loadModelPath = '/roomV2.glb';
+  const loadModelPath = '/roomV3.glb'; 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer;
     const { current: container } = refContainer;
@@ -68,9 +68,11 @@ const VoxelRoom = () => {
       const ambientLight = new THREE.AmbientLight(0xcccccc, 1);
       scene.add(ambientLight);
 
+      // controls orbit after initial load up animation
       const controls = new OrbitControls(camera, renderer.domElement);
       controls.autoRotate = true;
       controls.target = target;
+      controls.autoRotateSpeed = 1;
 
       loadGLTFModel(scene, loadModelPath, {
         receiveShadow: false,
@@ -92,13 +94,13 @@ const VoxelRoom = () => {
         // initial load up animation
         if (frame <= 100) {
           const p = initialCameraPosition;
-          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20;
+          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 8;
           camera.position.y = 150;
           camera.position.x =
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed);
           camera.position.z =
             p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed);
-        } else {
+        } else { // orbit controls handled by three.js OrbitControls
           controls.update();
         }
 
