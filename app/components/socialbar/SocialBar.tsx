@@ -24,7 +24,9 @@ const buttons: IconButtonProps[] = [
     title: 'Email Me',
     icon: AiOutlineMail,
     onClick: () => {
-      window.open('mailto:m4mehra@uwaterloo.ca?subject=Hey%20lets%20connect!&body=Looking%20forward%20to%20getting%20your%20message!');
+      window.open(
+        'mailto:m4mehra@uwaterloo.ca?subject=Hey%20lets%20connect!&body=Looking%20forward%20to%20getting%20your%20message!'
+      );
     },
   },
   {
@@ -48,17 +50,17 @@ const buttons: IconButtonProps[] = [
     title: 'My Resume',
     icon: MdOutlineContactPage,
     onClick: () => {
-      window.open('/resume')
+      window.open('/resume');
     },
   },
-  {
-    key: 'Instagram',
-    title: 'My Instagram',
-    icon: AiOutlineInstagram,
-    onClick: () => {
-      window.open('https://www.instagram.com/mayank.808/');
-    },
-  },
+  // {
+  //   key: 'Instagram',
+  //   title: 'My Instagram',
+  //   icon: AiOutlineInstagram,
+  //   onClick: () => {
+  //     window.open('https://www.instagram.com/mayank.808/');
+  //   },
+  // },
   // {
   //   key: 'Spotify',
   //   icon: RiSpotifyFill,
@@ -68,7 +70,7 @@ const buttons: IconButtonProps[] = [
 
 const SocialBar = () => {
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-1 pb-5 max-sm:ml-10 max-sm:mr-10 min-h-0'>
+    <div className='flex min-h-0 flex-row flex-wrap justify-center gap-1 pb-5 max-sm:ml-10 max-sm:mr-10'>
       {buttons.map((button, index) => (
         <IconButton
           key={button.key}

@@ -9,20 +9,19 @@ const height = 30;
 
 const IntroGroup = () => {
   return (
-    <div className='absolute z-[10] flex flex-col w-full max-lg:pt-10 max-lg:pb-4 max-lg:px-2 lg:right-0 lg:h-screen lg:w-1/2 lg:overflow-y-auto lg:pt-5 min-h-0'>
-      <div className='w-full h-full flex justify-center align-middle flex-col color-url text-white'>
+    <div className='absolute z-[10] flex min-h-0 w-full flex-col max-lg:px-2 max-lg:pb-4 max-lg:pt-10 lg:right-0 lg:h-screen lg:w-1/2 lg:overflow-y-auto lg:pt-5'>
+      <div className='color-url flex h-full w-full flex-col justify-center align-middle text-white'>
         <div className='min-h-0'>
-
           <div className='flex justify-center align-middle'>
             <Headshot src='/Headshot.jpg' alt="Mayank's Headshot" />
           </div>
 
-          <div className='inline-images pb-4 pl-4 pr-4 min-h-0 md:pb-5 md:pl-10 md:pr-10'>
+          <div className='inline-images min-h-0 pb-4 pl-4 pr-4 md:pb-5 md:pl-10 md:pr-10'>
             <h1 className='text-5xl font-bold'>
               Hi <WavingHand /> <br /> I&apos;m Mayank
             </h1>
             <CustomTypeWriter />
-            <p className='img:inline overflow-hidden text-center text-sm font-bold max-sm:text-sm'>
+            <p className='img:inline overflow-hidden text-left text-sm font-bold max-sm:text-sm'>
               I&apos;m a 3B Computer Science student
               <Image
                 src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Technologist.png'
@@ -47,8 +46,8 @@ const IntroGroup = () => {
                 width={width}
                 height={height}
               />
-              I bring a technically agile mindset to the table, being able to ramp
-              up quickly on any project and team.
+              I bring a technically agile mindset to the table, being able to
+              ramp up quickly on any project and team.
               <Image
                 src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png'
                 alt='Light Bulb'
@@ -69,7 +68,7 @@ const IntroGroup = () => {
                 width={width}
                 height={height}
               />
-              , and watching good movies
+              , and watching movies
               <Image
                 src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Vampire%20Medium-Light%20Skin%20Tone.png'
                 alt='Vampire Medium-Light Skin Tone'
@@ -112,7 +111,10 @@ const IntroGroup = () => {
 
               <li>
                 Full Stack & Data Engineer @{' '}
-                <a href='https://www.rbc.com/investor-relations/' target='blank'>
+                <a
+                  href='https://www.rbc.com/investor-relations/'
+                  target='blank'
+                >
                   RBC Investor Services
                 </a>
                 : August 2023 - April 2024
