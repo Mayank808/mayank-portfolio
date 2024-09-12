@@ -50,9 +50,19 @@ const buttons: IconButtonProps[] = [
     title: 'My Resume',
     icon: MdOutlineContactPage,
     onClick: () => {
-      window.open('/resume');
+      window.open(
+        'https://docs.google.com/document/d/1gBTg_MhGYAIz2GwqJLPGAK7NovCzU-2zplyqldPzgbE/edit?usp=sharing'
+      );
     },
   },
+  // {
+  //   key: 'Resume',
+  //   title: 'My Resume',
+  //   icon: MdOutlineContactPage,
+  //   onClick: () => {
+  //     window.open('/resume');
+  //   },
+  // },
   // {
   //   key: 'Instagram',
   //   title: 'My Instagram',
