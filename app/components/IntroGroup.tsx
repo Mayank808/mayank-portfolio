@@ -107,7 +107,7 @@ const IntroGroup = () => {
                 <a href='https://www.faire.com' target='blank'>
                   Faire
                 </a>
-                : May 2024 - Present
+                : May 2024 - August 2024
                 <Image
                   src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Convenience%20Store.png'
                   alt='Convenience Store'
