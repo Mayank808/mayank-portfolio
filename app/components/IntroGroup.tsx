@@ -84,6 +84,25 @@ const IntroGroup = () => {
             </p>
             <ul className='list-inside list-disc overflow-hidden pl-2 text-left text-sm font-bold max-sm:text-sm'>
               <li>
+                Backend Engineer @{' '}
+                <a href='https://x.com' target='blank'>
+                  X (Twitter)
+                </a>
+                : May 2025 - August 2025
+                <Image
+                  src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png'
+                  alt='Red Heart'
+                  width={width}
+                  height={height}
+                />
+                <Image
+                  src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Mobile%20Phone%20with%20Arrow.png'
+                  alt='Mobile Phone with Arrow'
+                  width={width}
+                  height={height}
+                />
+              </li>
+              <li>
                 Software Engineer @{' '}
                 <a href='https://www.faire.com' target='blank'>
                   Faire
