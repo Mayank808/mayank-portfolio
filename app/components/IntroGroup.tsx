@@ -13,7 +13,7 @@ const IntroGroup = () => {
       <div className='color-url flex h-full w-full flex-col justify-center align-middle text-white'>
         <div className='min-h-0'>
           <div className='flex justify-center align-middle'>
-            <Headshot src='/Headshot.jpg' alt="Mayank's Headshot" />
+            <Headshot src='/headshot.png' alt="Mayank's Headshot" />
           </div>
 
           <div className='inline-images min-h-0 pb-4 pl-4 pr-4 md:pb-5 md:pl-10 md:pr-10'>
@@ -83,6 +83,25 @@ const IntroGroup = () => {
               Previously built projects as a:
             </p>
             <ul className='list-inside list-disc overflow-hidden pl-2 text-left text-sm font-bold max-sm:text-sm'>
+              <li>
+                Software Engineer @{' '}
+                <a href='https://www.bloomberg.com' target='blank'>
+                  Bloomberg
+                </a>
+                : September 2025 - December 2025{' '}
+                <Image
+                  src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Dollar%20Banknote.png'
+                  alt='Dollar Banknote'
+                  width={width}
+                  height={height}
+                />
+                <Image
+                  src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png'
+                  alt='Chart Increasing'
+                  width={width}
+                  height={height}
+                />
+              </li>
               <li>
                 Backend Engineer @{' '}
                 <a href='https://x.com' target='blank'>
