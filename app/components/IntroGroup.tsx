@@ -13,7 +13,7 @@ const IntroGroup = () => {
       <div className='color-url flex h-full w-full flex-col justify-center align-middle text-white'>
         <div className='min-h-0'>
           <div className='flex justify-center align-middle'>
-            <Headshot src='/headshot.png' alt="Mayank's Headshot" />
+            <Headshot src='/Headshot.jpg' alt="Mayank's Headshot" />
           </div>
 
           <div className='inline-images min-h-0 pb-4 pl-4 pr-4 md:pb-5 md:pl-10 md:pr-10'>
