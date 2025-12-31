@@ -28,14 +28,16 @@ const IntroGroup = () => {
                 alt='Technologist'
                 width={width}
                 height={height}
+                unoptimized
               />
-              at the University of Waterloo, with over 2 and a half years of work
-              experience in software engineering roles.
+              at the University of Waterloo, with over 2 and a half years of
+              work experience in software engineering roles.
               <Image
                 src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png'
                 alt='Rocket'
                 width={width}
                 height={height}
+                unoptimized
               />
               I thrive at diving headfirst into challenges and being able to
               contribute to dynamic teams tackling interesting problems. Always
@@ -45,6 +47,7 @@ const IntroGroup = () => {
                 alt='Tropical Drink'
                 width={width}
                 height={height}
+                unoptimized
               />
               I bring a technically agile mindset to the table, being able to
               ramp up quickly on any project and team.
@@ -53,6 +56,7 @@ const IntroGroup = () => {
                 alt='Light Bulb'
                 width={width}
                 height={height}
+                unoptimized
               />
               Outside of tech, I find joy in cooking
               <Image
@@ -60,6 +64,7 @@ const IntroGroup = () => {
                 alt='Lobster'
                 width={width}
                 height={height}
+                unoptimized
               />
               , playing volleyball
               <Image
@@ -67,6 +72,7 @@ const IntroGroup = () => {
                 alt='Volleyball'
                 width={width}
                 height={height}
+                unoptimized
               />
               , and watching movies
               <Image
@@ -74,6 +80,7 @@ const IntroGroup = () => {
                 alt='Vampire Medium-Light Skin Tone'
                 width={width}
                 height={height}
+                unoptimized
               />
               . <br />
             </p>
@@ -94,12 +101,14 @@ const IntroGroup = () => {
                   alt='Dollar Banknote'
                   width={width}
                   height={height}
+                  unoptimized
                 />
                 <Image
                   src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png'
                   alt='Chart Increasing'
                   width={width}
                   height={height}
+                  unoptimized
                 />
               </li>
               <li>
@@ -113,12 +122,14 @@ const IntroGroup = () => {
                   alt='Red Heart'
                   width={width}
                   height={height}
+                  unoptimized
                 />
                 <Image
                   src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Mobile%20Phone%20with%20Arrow.png'
                   alt='Mobile Phone with Arrow'
                   width={width}
                   height={height}
+                  unoptimized
                 />
               </li>
               <li>
@@ -132,18 +143,21 @@ const IntroGroup = () => {
                   alt='Convenience Store'
                   width={width}
                   height={height}
+                  unoptimized
                 />
                 <Image
                   src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Shopping%20Cart.png'
                   alt='Shopping Cart'
                   width={width}
                   height={height}
+                  unoptimized
                 />
                 <Image
                   src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Money%20with%20Wings.png'
                   alt='Money with Wings'
                   width={width}
                   height={height}
+                  unoptimized
                 />
               </li>
 
@@ -161,12 +175,14 @@ const IntroGroup = () => {
                   alt='Bank'
                   width={width}
                   height={height}
+                  unoptimized
                 />
                 <Image
                   src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png'
                   alt='Laptop'
                   width={width}
                   height={height}
+                  unoptimized
                 />
               </li>
 
@@ -181,12 +197,14 @@ const IntroGroup = () => {
                   alt='Fish Cake with Swirl'
                   width={width}
                   height={height}
+                  unoptimized
                 />
                 <Image
                   src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Magnifying%20Glass%20Tilted%20Right.png'
                   alt='Magnifying Glass Tilted Right'
                   width={width}
                   height={height}
+                  unoptimized
                 />
               </li>
 
@@ -201,12 +219,14 @@ const IntroGroup = () => {
                   alt='Houses'
                   width={width}
                   height={height}
+                  unoptimized
                 />
                 <Image
                   src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Credit%20Card.png'
                   alt='Credit Card'
                   width={width}
                   height={height}
+                  unoptimized
                 />
               </li>
             </ul>
@@ -218,12 +238,14 @@ const IntroGroup = () => {
                 alt='Handshake'
                 width={width}
                 height={height}
+                unoptimized
               />
               <Image
                 src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Milky%20Way.png'
                 alt='Milky Way'
                 width={width}
                 height={height}
+                unoptimized
               />
             </p>
           </div>
