@@ -22,14 +22,14 @@ const IntroGroup = () => {
             </h1>
             <CustomTypeWriter />
             <p className='img:inline overflow-hidden text-left text-sm font-bold max-sm:text-sm'>
-              I&apos;m a 4A Computer Science student
+              I&apos;m a 4B Computer Science student
               <Image
                 src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Technologist.png'
                 alt='Technologist'
                 width={width}
                 height={height}
               />
-              at the University of Waterloo, with over 2 years of work
+              at the University of Waterloo, with over 2 and a half years of work
               experience in software engineering roles.
               <Image
                 src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png'
